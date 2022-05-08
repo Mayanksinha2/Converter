@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="numb" id="numb" placeholder="Enter a number">
+    <br>
+    <button type="submit" id="btn">Click me</button>
+</body>
+<script>
+    (function() {
+    var button  =  document.getElementById('btn');
+
+    button.addEventListener('click', () => {
+        var a = document.getElementById('numb').value;
+        // var b =a.toString();
+        var c=a.toString();
+    for(var i=0;i<c.length;i++){
+        switch(c.charAt(i)){
+            case '0':
+              var c=c.replace('0', 'zero ');
+            break;
+            case '1':
+              var c=c.replace('1', 'one ');
+            break;
+            case '2':
+              var c=c.replace('2', 'two ');
+            break;
+            case '3':
+              var c=c.replace('3', 'three ');
+            break;
+            case '4':
+              var c=c.replace('4', 'four ');
+            break;
+            case '5':
+              var c=c.replace('5', 'five ');
+            break;
+            case '6':
+              var c=c.replace('6', 'six ');
+            break;
+            case '7':
+              var c=c.replace('7', 'seven ');
+            break;
+            case '8':
+              var c=c.replace('8', 'eight ');
+            break;
+            case '9':
+              var c=c.replace('9', 'nine ');
+            break;
+        }
+    }
+    document.write("Number: "+a+"<br>" +c+"<br>");
+})
+})();
+</script>
+</html>
